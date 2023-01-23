@@ -4,6 +4,8 @@ const browserSync = require('browser-sync').create();
 
 // Плагины
 // Обработка HTML подключение HTML файлов
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
 const fileinclude = require('gulp-file-include');
 const htmlmin = require('gulp-htmlmin');
 const size = require('gulp-size');
@@ -13,6 +15,12 @@ const size = require('gulp-size');
 const html = (cb) => {
     console.log('Обработка HTML <=======================================>');
     return src('./src/html/*.html')
+        .pipe(plumber({
+            errorHandler: notify.onError(error => ({
+                title:"HTML",
+                message:error.message
+            }))
+        }))
         .pipe(fileinclude())
         .pipe(size({ title: 'До сжатия'}))
         .pipe(htmlmin({ collapseWhitespace: true }))
