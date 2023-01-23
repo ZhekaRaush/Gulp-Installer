@@ -1,0 +1,28 @@
+{
+  "name": "gulp-installer",
+  "version": "1.0.0",
+  "description": "Установщик проектов на основе сборщика GULP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhekaRaush/Gulp-Installer.git"
+  },
+  "keywords": [
+    "Установщик",
+    "проектов",
+    "на",
+    "основе",
+    "сборщика",
+    "GULP",
+    "GULP-Installer"
+  ],
+  "author": "ZhekaRaush",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhekaRaush/Gulp-Installer/issues"
+  },
+  "homepage": "https://github.com/ZhekaRaush/Gulp-Installer#readme"
+}
