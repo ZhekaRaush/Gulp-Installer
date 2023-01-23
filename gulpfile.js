@@ -1,9 +1,12 @@
+// Подключение основного модуля GULP
+const { src, dest } = require('gulp');
+
 // Модули
 // Обработка HTML
 const html = (cb) => {
     console.log('Обработка HTML');
-
-    cb();
+    return src('./src/html/*.html')
+        .pipe(dest('./public'));
 };
 
 // Задачи
