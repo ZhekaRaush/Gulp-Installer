@@ -9,6 +9,7 @@
 <body>
     @@include("./inc/header.html")
     <h1>Главная страница</h1>
+    @@loop("./inc/news-item.html", "../../data/news.json")
     @@include("./inc/footer.html")
 </body>
 </html>
