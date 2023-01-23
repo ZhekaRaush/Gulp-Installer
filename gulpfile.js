@@ -1,6 +1,7 @@
 // Подключение основного модуля GULP
 const { src, dest, watch, series, parallel } = require('gulp');
 const browserSync = require('browser-sync').create();
+const del = require('del');
 
 // Плагины
 // Обработка HTML подключение HTML файлов
@@ -29,6 +30,11 @@ const html = (cb) => {
         .pipe(browserSync.stream());
 };
 
+// Удаление Директорий
+const clear = () => {
+    return del('./public');
+};
+
 // Сервер
 const server = () => {
     browserSync.init({
@@ -46,6 +52,7 @@ const watcher = () => {
 // Задачи
 exports.html = html;
 exports.watcher = watcher;
+exports.clear = clear;
 
 // Сборка проекта
 exports.dev = series(
