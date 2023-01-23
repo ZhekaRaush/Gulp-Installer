@@ -27,6 +27,7 @@
   "homepage": "https://github.com/ZhekaRaush/Gulp-Installer#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-file-include": "^2.3.0"
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1"
   }
 }
