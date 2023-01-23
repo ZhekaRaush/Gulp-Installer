@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/ZhekaRaush/Gulp-Installer/issues"
   },
-  "homepage": "https://github.com/ZhekaRaush/Gulp-Installer#readme"
+  "homepage": "https://github.com/ZhekaRaush/Gulp-Installer#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
