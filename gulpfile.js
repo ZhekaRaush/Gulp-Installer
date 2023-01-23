@@ -1,5 +1,5 @@
 // Подключение основного модуля GULP
-const { src, dest, watch } = require('gulp');
+const { src, dest, watch, series, parallel } = require('gulp');
 
 // Плагины
 // Обработка HTML подключение HTML файлов
@@ -27,3 +27,9 @@ const watcher = () => {
 // Задачи
 exports.html = html;
 exports.watcher = watcher;
+
+// Сборка проекта
+exports.dev = series(
+    html,
+    watcher
+);
