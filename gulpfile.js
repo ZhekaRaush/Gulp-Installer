@@ -10,6 +10,8 @@ const clear = require('./task/clear.js');
 const html = require('./task/html.js');
 // Обработчик PUG
 const pug = require('./task/pug.js');
+// Обработчик CSS
+const css = require('./task/css.js');
 
 
 // Сервер
@@ -25,17 +27,17 @@ const server = () => {
 const watcher = () => {
     watch(path.html.watch, html).on("all", browserSync.reload);
     watch(path.pug.watch, pug).on("all", browserSync.reload);
+    watch(path.css.watch, css).on("all", browserSync.reload);
 };
 
 // Задачи
 exports.html = html;
 exports.pug = pug;
-exports.watcher = watcher;
-exports.clear = clear;
+exports.css = css;
 
 // Сборка проекта
 exports.dev = series(
     clear,
-    html,
+    parallel(html, css),
     parallel(watcher, server)
 );

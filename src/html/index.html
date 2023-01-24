@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     @@include("./inc/header.html")
-    <h1>Главная страница</h1>
-    @@loop("./inc/news-item.html", "../../data/news.json")
+    <h1 class="title">Главная страница</h1>
+    <div class="news">
+        @@loop("./inc/news-item.html", "../../data/news.json")
+    </div>
     @@include("./inc/footer.html")
 </body>
 </html>

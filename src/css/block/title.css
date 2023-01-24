@@ -1,0 +1,9 @@
+.title {
+    text-transform: uppercase;
+}
+
+@media (max-width: 370px) {
+    .title {
+        text-align: center;
+    }
+}
