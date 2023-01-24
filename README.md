@@ -14,8 +14,8 @@
 ## Input
 |                |    HTML    |   PUG    |    CSS  |
 |:---------------|:----------:|:--------:|:--------|
-| **Каталог**    | src/html/  | src/pug/ | src/css |
-| **Расширение** | .html      | .pug     | .css    |
+| **Каталог**    | src/html/ src/pug/    | src/css |
+| **Расширение** | .html .pug            | .css    |
 
 ## Output
 |           |   HTML  |      CSS      |
