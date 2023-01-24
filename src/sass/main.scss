@@ -1,0 +1,25 @@
+$base-font-size: 18px;
+
+@mixin phone {
+    @media (max-width: 370px) {
+        @content;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $base-font-size;
+    font-family: Arial;
+    line-height: 1.5;
+
+    @include phone {
+        color: #fff;
+        background-color: #000;
+    }
+}
+
+@import './block/title.scss';
+@import './block/news.scss';
