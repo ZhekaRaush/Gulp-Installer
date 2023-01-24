@@ -1,6 +1,8 @@
 // Подключение основного модуля GULP
 const { watch, series, parallel } = require('gulp');
 const browserSync = require('browser-sync').create();
+// Конфигурация
+const path = require('./config/path.js');
 
 // Удаление директорий
 const clear = require('./task/clear.js');
@@ -14,15 +16,15 @@ const pug = require('./task/pug.js');
 const server = () => {
     browserSync.init({
         server: {
-            baseDir: './public'
+            baseDir: path.root
         }
     })
 };
 
 // Наблюдение
 const watcher = () => {
-    watch('./src/html/**/*.html', html).on("all", browserSync.reload);
-    watch('./src/pug/**/*.pug', pug).on("all", browserSync.reload);
+    watch(path.html.watch, html).on("all", browserSync.reload);
+    watch(path.pug.watch, pug).on("all", browserSync.reload);
 };
 
 // Задачи
