@@ -34,6 +34,6 @@ exports.clear = clear;
 // Сборка проекта
 exports.dev = series(
     clear,
-    pug,
+    html,
     parallel(watcher, server)
 );
