@@ -2,6 +2,7 @@
 const { src, dest } = require('gulp');
 // Конфигурация
 const path = require('../config/path.js');
+const app = require('../config/app.js');
 // Плагины
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
@@ -20,7 +21,7 @@ const html = () => {
         }))
         .pipe(fileinclude())
         .pipe(size({ title: 'До сжатия'}))
-        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(htmlmin(app.htmlmin))
         .pipe(size({ title: 'После сжатия'}))
         .pipe(dest(path.html.dest));
 };
