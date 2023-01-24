@@ -36,5 +36,5 @@
 [del](https://www.npmjs.com/package/del) Удаление каталогов и файлов    
 [gulp-size](https://www.npmjs.com/package/gulp-size) Отображение информации о размерах файлов в терминале    
 [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) Вывод ошибок в виде всплывающей подсказки    
-[gulp-notify](https://www.npmjs.com/package/gulp-notify) Настройка для отображения вывода ошибок во всплывающей подсказке
+[gulp-notify](https://www.npmjs.com/package/gulp-notify) Настройка для отображения вывода ошибок во всплывающей подсказке    
 [browser-sync](https://browsersync.io/docs/gulp) Автоматическое обновление сайта при изменении файлов    
