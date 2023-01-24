@@ -4,7 +4,7 @@
 ## Сборка проекта на Gulp 4
 Быстрая настройка сборки вашего проекта на Gulp,    
 в данный момент сборка поддерживает сборщики:
-- HTML, PUG, CSS
+- HTML, PUG, CSS, SCSS, SASS
 
 ## Функционал сборки Gulp-Installer
 - компиляция препроцессора PUG
@@ -12,12 +12,13 @@
 - 2 варианта подключения стилей CSS
 - style.min.css - сжатый объединенный в 1 файл
 - style.css - объединенный в 1 файл без сжатия
+- компиляция препроцессоров SASS, SCSS
 
 ## Input
-|                |          HTML         |    CSS  |
-|:---------------|:---------------------:|:--------|
-| **Каталог**    | src/html/ src/pug/    | src/css |
-| **Расширение** | .html .pug            | .css    |
+|                |      HTML PUG         |   CSS SCSS SASS  |
+|:---------------|:---------------------:|:-----------------|
+| **Каталог**    | src/html/ src/pug/    | src/css src/scss |
+| **Расширение** | .html .pug            | .css .scss .sass |
 
 ## Output
 |           |   HTML  |             CSS            |
@@ -49,3 +50,6 @@
 [gulp-rename](https://www.npmjs.com/package/gulp-rename) Переименовывает файлы    
 [gulp-shorthand](https://www.npmjs.com/package/gulp-shorthand) Сокращftn стили в CSS    
 [gulp-group-css-media-queries](https://www.npmjs.com/package/gulp-group-css-media-queries) Постобработка CSS файлов    
+[gulp-sass](https://www.npmjs.com/package/gulp-sass) Компиляция Sass и Scss файлов    
+[sass](https://www.npmjs.com/package/sass) Компилятор Sass    
+[gulp-sass-glob](https://www.npmjs.com/package/gulp-sass-glob) Импорт всех файлов из указанной директории    
