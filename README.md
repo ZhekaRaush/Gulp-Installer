@@ -12,7 +12,7 @@
 - минификация и сборка 1 файл CSS
 
 ## Input
-|||||||||||||||||| HTML |||||| PUG |||||| CSS |||||    
+| | | | | | | | | | | ||||||| HTML |||||| PUG |||||| CSS |||||    
 |:---------------|:--------------------:|:-------:|    
 | ***Каталог***  | src/html/ | src/pug/ | src/css |    
 | **Расширение** | .html ||||| .pug ||||| .css ||||    
@@ -44,6 +44,6 @@
 [gulp-cssimport](https://www.npmjs.com/package/gulp-cssimport) Собрка импортированных файлов    
 [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) Автоматическое добавление префиксов в CSS    
 [gulp-csso](https://www.npmjs.com/package/gulp-csso) Удаляет прабелы и табуляцию    
-[gulp-rename](https://www.npmjs.com/package/gulp-rename) Переименовывает файлы
+[gulp-rename](https://www.npmjs.com/package/gulp-rename) Переименовывает файлы    
 [gulp-shorthand](https://www.npmjs.com/package/gulp-shorthand) Сокращftn стили в CSS    
 [gulp-group-css-media-queries](https://www.npmjs.com/package/gulp-group-css-media-queries) Постобработка CSS файлов    
