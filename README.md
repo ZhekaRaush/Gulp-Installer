@@ -4,22 +4,23 @@
 ## Сборка проекта на Gulp 4
 Быстрая настройка сборки вашего проекта на Gulp,    
 в данный момент сборка поддерживает сборщики:
-- HTML, PUG
+- HTML, PUG, CSS
 
 ## Функционал сборки Gulp-Installer
 - компиляция препроцессора PUG
 - минификация и компиляция HTML
+- минификация и сборка 1 файл CSS
 
 ## Input
-|| HTML |
-|:---|:------:|:-----:|:----:|:-----:|
-| **Каталог** | src/ | src/html/ |
-| **Расширение** | .html, .pug |
+|||||||||||||||||| HTML |||||| PUG |||||| CSS |||||
+|:---------------|:--------------------:|:-------:|
+| ***Каталог***  | src/html/ | src/pug/ | src/css |
+| **Расширение** | .html ||||| .pug ||||| .css ||||
 
 ## Output
-|| HTML |
-|:---|:------:|:-----:|:----:|:-----:|
-| **Путь** | public/ |
+|||||||||||| HTML |||| CSS |||||||||
+|:---------|:-------:|:-----------:|
+| **Путь** | public/ | public/css/ |
 
 ## Зупуск:  
 1. Скачать все файлы проекта  
@@ -39,3 +40,10 @@
 [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) Вывод ошибок в виде всплывающей подсказки    
 [gulp-notify](https://www.npmjs.com/package/gulp-notify) Настройка для отображения вывода ошибок во всплывающей подсказке    
 [browser-sync](https://browsersync.io/docs/gulp) Автоматическое обновление сайта при изменении файлов    
+[gulp-concat](https://www.npmjs.com/package/gulp-concat) Объединение нескольких файлов в один    
+[gulp-cssimport](https://www.npmjs.com/package/gulp-cssimport) Собрка импортированных файлов    
+[gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) Автоматическое добавление префиксов в CSS    
+[gulp-csso](https://www.npmjs.com/package/gulp-csso) Удаляет прабелы и табуляцию    
+[gulp-rename](https://www.npmjs.com/package/gulp-rename) Переименовывает файлы
+[gulp-shorthand](https://www.npmjs.com/package/gulp-shorthand) Сокращftn стили в CSS    
+[gulp-group-css-media-queries](https://www.npmjs.com/package/gulp-group-css-media-queries) Постобработка CSS файлов    
