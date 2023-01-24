@@ -28,15 +28,11 @@ const server = () => {
 // Наблюдение
 const watcher = () => {
     watch(path.html.watch, html).on("all", browserSync.reload);
-    watch(path.pug.watch, pug).on("all", browserSync.reload);
-    watch(path.css.watch, css).on("all", browserSync.reload);
     watch(path.scss.watch, scss).on("all", browserSync.reload);
 };
 
 // Задачи
 exports.html = html;
-exports.pug = pug;
-exports.css = css;
 exports.scss = scss;
 
 // Сборка проекта

@@ -12,6 +12,8 @@ const rename = require('gulp-rename');
 const size = require('gulp-size');
 const shorthand = require('gulp-shorthand');
 const groupCssMediaQueries = require('gulp-group-css-media-queries');
+const sass = require('gulp-sass')(require('sass'));
+const sassGlob = require('gulp-sass-glob');
 
 const scss = () => {
     console.log('Обработка SCSS <=======================================>');
@@ -22,6 +24,8 @@ const scss = () => {
                 message:error.message
             }))
         }))
+        .pipe(sassGlob())
+        .pipe(sass())
         .pipe(autoprefixer())
         .pipe(shorthand())
         .pipe(groupCssMediaQueries())
