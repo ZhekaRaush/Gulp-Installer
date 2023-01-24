@@ -2,6 +2,7 @@
 const { src, dest } = require('gulp');
 // Конфигурация
 const path = require('../config/path.js');
+const app = require('../config/app.js');
 // Плагин
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
@@ -16,12 +17,7 @@ const pug = () => {
                 message:error.message
             }))
         }))
-        .pipe(pugs({
-            pretty: true,
-            data: {
-                news: require('../data/news.json')
-            }
-        }))
+        .pipe(pugs(app.pug))
         .pipe(dest(path.pug.dest));
 };
 module.exports = pug;
