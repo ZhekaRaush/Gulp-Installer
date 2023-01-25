@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/ZhekaRaush/Gulp-Installer">
+    <img height="257" width="114" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
+  </a>
+  <p align="center">Сборка проекта на Gulp 4</p>
+</p>
 # Gulp-Installer
 Сборщик проекта на основе сборщика GULP
 
