@@ -78,3 +78,7 @@
 [gulp-webp-css](https://www.npmjs.com/package/gulp-webp-css) 
 [gulp-webp-html](https://www.npmjs.com/package/gulp-webp-html) Автоматическое преобразование изображений, заключённых в теге HTML в формат WEBP    
 [gulp-webp-css](https://www.npmjs.com/package/gulp-webp-css) То же самое только c CSS файлами    
+
+
+### Автору на кофе
+![Сбер VISA](https://github.com/ZhekaRaush/Gulp-Installer/blob/main/src/img/sber.jpg)
