@@ -3,8 +3,8 @@
 
 ## Сборка проекта на Gulp 4
 Быстрая настройка сборки вашего проекта на Gulp,    
-в данный момент сборка поддерживает сборщики:
-- HTML, PUG, CSS, SCSS, SASS
+в данный момент сборка поддерживает следующие сборщики:
+- HTML, PUG, CSS, SCSS, SASS, JavaScript
 
 ## Функционал сборки Gulp-Installer
 - компиляция препроцессора PUG
@@ -13,17 +13,19 @@
 - style.min.css - сжатый объединенный в 1 файл
 - style.css - объединенный в 1 файл без сжатия
 - компиляция препроцессоров SASS, SCSS
+- преобразования кода ECMAScript 2015 и обратно совместимую версию JavaScript с помощью Babel
+- сжатый объединенный в 1 файл JavaScript
 
 ## Input
-|                |      HTML PUG         |   CSS SCSS SASS  |
-|:---------------|:---------------------:|:-----------------|
-| **Каталог**    | src/html/ src/pug/    | src/css src/scss |
-| **Расширение** | .html .pug            | .css .scss .sass |
+|                |      HTML PUG         |   CSS SCSS SASS  |    JS     |
+|:---------------|:---------------------:|:----------------:|:---------:|
+| **Каталог**    | src/html/ src/pug/    | src/css src/scss | src/js    |
+| **Расширение** | .html .pug            | .css .scss .sass | .js       |
 
 ## Output
-|           |   HTML  |             CSS            |
-|:---------:|:-------:|:--------------------------:|
-| **Путь**  | public/ | public/css/style.min.css   |
+|           |   HTML  |             CSS            |          JS          |
+|:---------:|:-------:|:--------------------------:|:--------------------:|
+| **Путь**  | public/ | public/css/style.min.css   | public/css/script.js |
 
 ## Зупуск:  
 1. Скачать все файлы проекта  
@@ -33,7 +35,7 @@
 5. Выполните в терминале: gulp dev (запустится таск для работы с приложением)  
 6. Пишите свой код и наслаждайтесь автоматической сборкой проекта.  
 
-## Используемые NPM пакеты
+## Используемые NPM пакеты и ссылки на документацию
 [gulp](https://www.npmjs.com/package/gulp) Сборщик Gulp    
 [gulp-file-include](https://www.npmjs.com/package/gulp-file-include) Подключение файлов HTML    
 [gulp-htmlmin](https://www.npmjs.com/package/gulp-htmlmin) Минификация HTML файлов    
@@ -53,3 +55,8 @@
 [gulp-sass](https://www.npmjs.com/package/gulp-sass) Компиляция Sass и Scss файлов    
 [sass](https://www.npmjs.com/package/sass) Компилятор Sass    
 [gulp-sass-glob](https://www.npmjs.com/package/gulp-sass-glob) Импорт всех файлов из указанной директории    
+[gulp-babel](https://www.npmjs.com/package/gulp-babel) Преобразует JavaScript в старый стандарт    
+[@babel/core](https://www.npmjs.com/package/@babel/core) Ядро Babel    
+[@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) Пресет для компиляции Babel    
+[webpack](https://www.npmjs.com/package/webpack) Cборщик модулей, основная цель — объединить файлы JavaScript    
+[webpack-stream](https://www.npmjs.com/package/webpack-stream) Нужен для удобной интеграции с GULP.    

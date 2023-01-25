@@ -9,6 +9,11 @@
   "browserslist": [
     "last 3 versions"
   ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZhekaRaush/Gulp-Installer.git"
@@ -29,10 +34,13 @@
   },
   "homepage": "https://github.com/ZhekaRaush/Gulp-Installer#readme",
   "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
     "browser-sync": "^2.27.11",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssimport": "^7.0.0",
     "gulp-csso": "^4.0.1",
@@ -47,6 +55,8 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-shorthand": "^1.1.0",
     "gulp-size": "^4.0.1",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "webpack": "^5.75.0",
+    "webpack-stream": "^7.0.0"
   }
 }
