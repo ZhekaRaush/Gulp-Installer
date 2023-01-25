@@ -4,7 +4,9 @@
 ## Сборка проекта на Gulp 4
 Быстрая настройка сборки вашего проекта на Gulp,    
 в данный момент сборка поддерживает следующие сборщики:
-- HTML, PUG, CSS, SCSS, SASS, JavaScript
+- HTML, PUG    
+- CSS, SCSS, SASS    
+- JavaScript    
 
 ## Функционал сборки Gulp-Installer
 - компиляция препроцессора PUG
