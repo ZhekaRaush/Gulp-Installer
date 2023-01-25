@@ -13,6 +13,7 @@
 - HTML, PUG    
 - CSS, SCSS, SASS    
 - JavaScript    
+- PNG, JPG, JPEG GIF SVG    
 
 ## Функционал сборки Gulp-Installer
 - компиляция препроцессора PUG
@@ -23,17 +24,20 @@
 - компиляция препроцессоров SASS, SCSS
 - преобразования кода ECMAScript 2015 и обратно совместимую версию JavaScript с помощью Babel
 - сжатый объединенный в 1 файл JavaScript
+- сжатие изображений, поддержка и преобразование файлов с расширением WEBP
+- отслеживание новых изображений, которые еще не были сжаты
+- отслеживание изменений в файлах и автоматический запуск повторной обработки
 
 ## Input
-|                |      HTML PUG         |   CSS SCSS SASS  |    JS     |
-|:---------------|:---------------------:|:----------------:|:---------:|
-| **Каталог**    | src/html/ src/pug/    | src/css src/scss | src/js    |
-| **Расширение** | .html .pug            | .css .scss .sass | .js       |
+|                |      HTML PUG         |   CSS SCSS SASS  |    JS     |             IMG           |
+|:---------------|:---------------------:|:----------------:|:---------:|:-------------------------:|
+| **Каталог**    | src/html/ src/pug/    | src/css src/scss | src/js    | src/img                   |
+| **Расширение** | .html .pug            | .css .scss .sass | .js       | .png .jpg .jpeg .gif .svg |
 
 ## Output
-|           |   HTML  |             CSS            |          JS          |
-|:---------:|:-------:|:--------------------------:|:--------------------:|
-| **Путь**  | public/ | public/css/style.min.css   | public/css/script.js |
+|           |   HTML  |             CSS            |          JS          |     IMG     |
+|:---------:|:-------:|:--------------------------:|:--------------------:|:-----------:|
+| **Путь**  | public/ | public/css/style.min.css   | public/css/script.js | public/img/ |
 
 ## Зупуск:  
 1. Скачать все файлы проекта  
@@ -67,4 +71,10 @@
 [@babel/core](https://www.npmjs.com/package/@babel/core) Ядро Babel    
 [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) Пресет для компиляции Babel    
 [webpack](https://www.npmjs.com/package/webpack) Cборщик модулей, основная цель — объединить файлы JavaScript    
-[webpack-stream](https://www.npmjs.com/package/webpack-stream) Нужен для удобной интеграции с GULP.    
+[webpack-stream](https://www.npmjs.com/package/webpack-stream) Нужен для удобной интеграции с GULP    
+[gulp-newer](https://www.npmjs.com/package/gulp-newer) Отслеживает только новые файлы    
+[gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin) Сжимает изображения     
+[gulp-webp](https://www.npmjs.com/package/gulp-webp) Конветирует изображения в формат WEBP    
+[gulp-webp-css](https://www.npmjs.com/package/gulp-webp-css) 
+[gulp-webp-html](https://www.npmjs.com/package/gulp-webp-html) Автоматическое преобразование изображений, заключённых в теге HTML в формат WEBP    
+[gulp-webp-css](https://www.npmjs.com/package/gulp-webp-css) То же самое только c CSS файлами    
