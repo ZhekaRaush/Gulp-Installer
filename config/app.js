@@ -15,5 +15,9 @@ module.exports = {
         output: {
             filename: 'script.js'
         }
+    },
+
+    imagemin: {
+        verbose: true
     }
 }

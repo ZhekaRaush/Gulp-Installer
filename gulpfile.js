@@ -16,6 +16,8 @@ const css = require('./task/css.js');
 const scss = require('./task/scss.js');
 // Обработчик JavaScript
 const js = require('./task/js.js');
+// Обработчик Изображений
+const img = require('./task/img.js');
 
 
 // Сервер
@@ -34,6 +36,7 @@ const watcher = () => {
     watch(path.css.watch, css).on("all", browserSync.reload);
     watch(path.scss.watch, scss).on("all", browserSync.reload);
     watch(path.js.watch, js).on("all", browserSync.reload);
+    watch(path.img.watch, img).on("all", browserSync.reload);
 };
 
 // Задачи
@@ -42,10 +45,11 @@ exports.pug = pug;
 exports.css = css;
 exports.scss = scss;
 exports.js = js;
+exports.img = img;
 
 // Сборка проекта
 exports.dev = series(
     clear,
-    parallel(html, scss, js),
+    parallel(html, scss, js, img),
     parallel(watcher, server)
 );

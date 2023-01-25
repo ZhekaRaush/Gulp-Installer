@@ -10,6 +10,9 @@
 <body>
     @@include("./inc/header.html")
     <h1 class="title">Главная страница</h1>
+    <div style="width: 100%; text-align: center;">
+        <img src="img/water.jpg" alt="Фотография воды" width="500" style="margin: 0 auto;">
+    </div>
     <div class="news">
         @@loop("./inc/news-item.html", "../../data/news.json")
     </div>
