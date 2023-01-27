@@ -1,0 +1,38 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    & a {
+        border: 0;
+    }
+    & .logo {
+        display: flex;
+        align-items: center;
+        & img {
+            width: 25px;
+            margin: 0 30px;
+        }
+    }
+    & .menu {
+        width: 50%;
+        margin: 0 30px;
+        display: flex;
+        align-items: center;
+        & ul {
+            display: flex;
+            & li {
+                list-style: none;
+                margin-right: 20px;
+                & a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}
