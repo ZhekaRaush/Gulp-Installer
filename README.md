@@ -83,3 +83,8 @@
 
 ### Автору на кофе
 ![Сбер VISA](https://github.com/ZhekaRaush/Gulp-Installer/blob/main/src/img/sber.jpg)
+
+### Контакты
+[![Telegram](https://github.com/ZhekaRaush/Gulp-Installer/blob/main/src/img/telegram.webp)](https://t.me/ZhekaRaush)    
+[![VK](https://github.com/ZhekaRaush/Gulp-Installer/blob/main/src/img/vk.png)](https://vk.com/id528175475)    
+[![GitHub](https://github.com/ZhekaRaush/Gulp-Installer/blob/main/src/img/github.webp)](https://github.com/ZhekaRaush)    
