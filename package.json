@@ -1,6 +1,6 @@
 {
   "name": "gulp-installer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GULP-Installer - сборщик проекта на основе сборщика GULP4",
   "main": "index.js",
   "scripts": {
