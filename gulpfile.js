@@ -48,7 +48,7 @@ exports.js = js;
 exports.img = img;
 
 // Сборка проекта
-exports.dev = series(
+exports.default = series(
     clear,
     parallel(html, scss, js, img),
     parallel(watcher, server)
